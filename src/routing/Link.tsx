@@ -4,7 +4,7 @@ export default function Link({
   children,
 }: {
   to: string;
-  cn: CSSModuleClasses[string];
+  cn?: CSSModuleClasses[string];
   children: React.ReactNode;
 }) {
   function onClick(event: React.MouseEvent<HTMLAnchorElement>) {
