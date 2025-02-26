@@ -1,23 +1,24 @@
 import styles from "./index.module.scss";
+import Link from "../../routing/Link";
 
 export default function Navbar() {
   return (
     <nav className={styles.nav}>
       <ul className={styles.navList}>
         <li className={styles.navItem}>
-          <a href="/" className={styles.navLink}>
+          <Link to="/" cn={styles.navLink}>
             Home
-          </a>
+          </Link>
         </li>
         <li className={styles.navItem}>
-          <a href="/projects" className={styles.navLink}>
+          <Link to="/projects" cn={styles.navLink}>
             Projects
-          </a>
+          </Link>
         </li>
         <li className={styles.navItem}>
-          <a href="/contact" className={styles.navLink}>
-            Contact
-          </a>
+          <Link to="/about" cn={styles.navLink}>
+            About
+          </Link>
         </li>
       </ul>
     </nav>
